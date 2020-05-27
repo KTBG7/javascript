@@ -6,8 +6,12 @@
 // Part 2: Write another funciton that converts the Celsius temperature back to Fahrenheit. 
 
 //your code...
-
-
+function fahrenheitToCelsius(fahrenheit){   
+var fahrenheit = prompt("Enter temperature in fahrenheit");
+var celsius = (fahrenheit -32) * (5/9);
+return celsius;
+}
+console.log("The temperature in Celsius is " + fahrenheitToCelsius());
 
 
 
@@ -17,10 +21,16 @@
 // Write a JavaScript function to determine if someone is old enough to vote. Declare a variable for age and write a conditional statement for whether that age is old enough to vote. Console log "yes" or "no"
 
 //your code...
-
-
-
-
+function eligibleForVoting(){
+    var age = parseInt(prompt("Enter your age"));
+    var ans;
+    if (age >= 18){
+        ans = "Yes!";
+    }else{
+        ans = "No!";
+    }
+    return ans;
+}
 
 
 
@@ -29,12 +39,14 @@
 // Write a JavaScript function that converts a string to an array. Declare a string variable with "The five boxing wizards jump quickly." Use the split() method to turn the string into an array of strings. (Be sure you separate the string into words, not characters.) After you have finished, use the join() method to change the array back into a string.
 
 //your code...
-
-
-
-
-
-
+function stringToArray(str){
+    var str = prompt("Enter a string!");
+    var strSplit = str.split(" ");
+    var strJoin = strSplit.join();
+    console.log(strSplit);
+    console.log(strJoin);
+    return str;
+  }
 
 /************************************************************* */
 // Problem 4:
