@@ -162,6 +162,34 @@ const adjectiveArray = [ 'salty', 'spicy', 'sour', 'sweet', 'rich','creamy','ama
 // Using both the foodArray and the adjectiveArray, make a
 // "for" loop that console.log()'s a sentence for each
 // corresponding value in the arrays. Add the word "is" or "are" depending on if the food is singular or plural.  "Potatoes are salty", "Lemon is sour".
+function arrayFor(){
+    var i;
+    const foodArray = [ 'potatoes', 'tamales', 'lemon','strawberries','chocolate', 'pudding'];
+    const adjectiveArray = [ 'salty', 'spicy', 'sour', 'sweet', 'rich','creamy','amazing'];
+    var school = 'TEKcamp';
+    var index = foodArray.indexOf('pudding');
+  
+  if (index !== -1) {
+      foodArray[index] = school;
+      console.log(foodArray[index]);
+  }
+  for (i = 0; i < 6; i++){
+    if (i == 0){
+      console.log(foodArray[0] + " are " + adjectiveArray[0])
+    }else if (i == 1){
+      console.log(foodArray[1] + " are " + adjectiveArray[1])
+    }else if (i == 2){
+      console.log(foodArray[2] + " is " + adjectiveArray[2])
+    }else if (i == 3){
+      console.log(foodArray[3] + " are " + adjectiveArray[3])
+    }else if (i == 4){
+      console.log(foodArray[4] + " is " + adjectiveArray[3])
+    }else if (i == 5){
+      console.log(foodArray[5] + " is " + adjectiveArray[6])
+    }
+  }
+  return 0;
+  }
 
 /************************************************************* */
 // Bonus Assignment: Create 4 mathematical function expressions, add,subtract,multiply,divide.  put them in an array, and create a doMath() function that randomly does one of the 4 operations whenever it is run.  the doMath() function should print out what mathetmatical function was carried out.  The doMath() function should return the computed value of any operation performed.
