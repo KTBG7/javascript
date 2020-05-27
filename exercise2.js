@@ -137,7 +137,21 @@ function ageGroups(age, drinkingAge, teenager, retirement){
 */
 
 //your code...
-
+var me = {
+    name: "Kevin Ibanez",
+    age: 18,
+    gender: "male",
+    hobbies: "building computers",
+    profession: "student",
+    education: "one semester of university",
+    learn: function(){
+      return this.name;
+      },
+    introduction: function(){
+      return "Hello, my name is " + this.name + "!" + " Nice to meet you!"; 
+    }
+  
+  }
 
 /************************************************************* */
 // Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
