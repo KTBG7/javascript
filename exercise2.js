@@ -174,7 +174,12 @@ var pc = {
 //Problem 7: create a function that outputs your 3 favorite data types, with a message explaining why you like that data type.
 
 //your code...
-
+function favoriteTypes(){
+    var response = prompt("type yes if you want to know my 3 favorite data type else type no");
+    if (response == yes){
+      return "My favorite data types are booleans, numbers and arrays. I love booleans because of their usefulness when creating function and/or if statements and many other statements. Numbers are awesome because they can be used to make the computer do that math for you when inputing them into a function instead of doing it yourself with a pencil! Lastly, I love arrays because they can hold multiple values and they can be used in conjunction with many other functional item in Javascript such as while statements!"
+    }
+  }
 
 
 
