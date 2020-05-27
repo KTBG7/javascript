@@ -53,7 +53,20 @@ function stringToArray(str){
 // Write a JavaScript function with a function that reverses your telephone number. Use the split() and join() methods from the previous problem as well as the toString() method to convert a number into a string and reverse() method to reverse an array in place.
 
 //your code...
+var phone = prompt("Enter a phone number") + "";
+function reversePhone(phone){
+  return phone.split("").reverse().join("");
 
+}
+function phoneToString(phone){
+  var phone = phone.toString();
+  return phone;
+}
+function reverseArray(phone){
+  var splitPhone = phone.split("");
+  var reverseArray = splitPhone.reverse();
+  return reverseArray;
+}
 
 
 
