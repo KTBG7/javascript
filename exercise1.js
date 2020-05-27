@@ -81,7 +81,7 @@ function createCar(){
     var model = prompt("What is the car's model?");
     var year = prompt("What is the car's year?");
     var color = prompt("What is the car's color?");
-    var car = {make,model,year,color};
+    var car = [make,model,year,color];
     return car;
     }
 
