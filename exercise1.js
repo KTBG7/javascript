@@ -95,7 +95,17 @@ function createCar(){
 
 
 //your code...
-
+function oddEven(){
+    var i;
+    for (i = 0; i < 15; i++){
+      if (i % 2 == 0 && i>1){
+        console.log("even");
+      }else{
+        console.log("odd");
+      }
+    }
+    return i;
+  }
 
 
 
