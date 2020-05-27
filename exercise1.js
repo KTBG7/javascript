@@ -114,7 +114,19 @@ function oddEven(){
 // Write a JavaScript function that iterates the integers from 1 to 100. For multiples of 3 print "TEK" instead of the number and for multiples of 5, print "camp." For numbers that are multiples of both 3 and 5, print "TEKcamp."
 
 //your code...
-
+function tekCamp(){
+    var i;
+    for (i = 1; i < 100; i++){
+      if (i % 3 == 0 && i%5==0){
+        console.log("TEKcamp");
+      }else if(i%5==0){
+        console.log("camp");
+      }else if(i % 3 == 0){
+        console.log("TEK")
+      }
+    }
+    return i;
+  }
 
 /************************************************************* */
 // Problem 8:
