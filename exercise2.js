@@ -10,7 +10,14 @@ for(let i=0; i<10; i++) {
 
 
 //your code...
-
+function forWhile(){
+    let i = 0;
+    while(i < 10){
+      console.log(" the value of i in the loop is : " + i);
+      i++;
+    }
+    return 0;
+    }
 
 
 
@@ -20,6 +27,35 @@ for(let i=0; i<10; i++) {
 //use javascript to compute the value of the above statement. Each individual operation needs to be a function expression. run all the functions after defining them, and print the answer to the console.
 
 //your code...
+var ans = 0;
+var i;
+const add = function(ans){
+  ans = 30 + 2
+  return ans;
+}
+var w = add(ans);
+
+const sub = function (ans, w){
+  ans = w * 20;
+  return ans;
+}
+var x = sub(ans, w);
+const div = function(ans, x){
+  ans = x / 10;
+  return ans;
+}
+var y = div(ans, x);
+const pow = function(ans, y){
+  ans = y * y;
+  return ans;
+}
+var z = pow(ans, y);
+var operations = [w,x,y,z];
+function operate(operations){
+  for (let i = 0; i < 4; i++){
+    console.log(operations[i]);
+  }return "It Works!";
+}
 
 
 /************************************************************* */
