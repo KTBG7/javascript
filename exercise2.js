@@ -84,18 +84,24 @@ function operate(operations){
 
 const day = "friday";
 
-if(day === "monday") {
+switch(day) {
+  case "monday":
     console.log("we got a long week ahead of us...");
-} else if(day === "tuesday") {
+    break;
+  case "tuesday":
     console.log("tuesday's are still beterr than mondays, but LONG way to go still");
-} else if (day === "wednesday") {
-    console.log("We are smack dab in the middle of the week");
-} else if (day === "thursday") {
+    break;
+  case "wednesday":
+    console.log("We are smack dab in the middle of the week")
+    break;
+  case "thursday":
     console.log("Thursday night... the mood is right");
-} else if (day === "friday") {
-    console.log("TGIF.  Friday truly is the best day of the week!")
-} else {
-    console.log("It's a weekend!")
+    break;
+  case "friday":
+    console.log("TGIF.  Friday truly is the best day of the week!");
+    break;
+  default :
+    console.log("It's a weekend!");
 }
 
 
