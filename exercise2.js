@@ -157,7 +157,17 @@ var me = {
 // Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
 
 //your code...
-
+var pc = {
+    cpu: "Ryzen 7 1700",
+    gpu: "RTX 2060 Super",
+    ramSize: "32GB",
+    rbg: "Yes",
+    caseType: "Full-Atx glass",
+    coolingType: "air cooled",
+    performance: function(){
+      return "With the " + this.cpu + " and " + this.gpu + " plus " + this.ramSize + ", it can run every single game well!"
+    }
+  }
 
 
 /************************************************************* */
