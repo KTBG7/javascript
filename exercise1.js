@@ -76,7 +76,14 @@ function reverseArray(phone){
 // Write a JavaScript function that creates a car object using information about your car. Include the make, model, year, and color. Write a function to get the year, color, make, and model in that order.
 
 //your code...
-
+function createCar(){
+    var make = prompt("What is the car's make?");
+    var model = prompt("What is the car's model?");
+    var year = prompt("What is the car's year?");
+    var color = prompt("What is the car's color?");
+    var car = {make,model,year,color};
+    return car;
+    }
 
 
 
