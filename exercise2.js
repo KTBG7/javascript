@@ -103,17 +103,16 @@ if(day === "monday") {
 /************************************************************* */
 // Problem 5: Refactor the following functions to use a ternary expression:
 const age = 10;
-if (age > 21) console.log("adult"); else {
-    console.log("minor");
-}
+var drinkingAge = age > 21 ? console.log("adult"):console.log("minor");
 
-if (age > 13 && age < 19) console.log('teen'); else {
-    console.log("not a teenager");
-};
+var teenager = (age > 13 && age < 19) ? console.log('teen'): console.log("not a teenager");
 
-if (age > 65) console.log("retired"); else {
-    console.log("still working...");
-}
+var retirement = age > 65 ? console.log("retired"):console.log("still working...");
+function ageGroups(age, drinkingAge, teenager, retirement){
+    console.log(drinkingAge);
+    console.log(teenager);
+    console.log(retirement);
+  }
 
 
 /************************************************************* */
