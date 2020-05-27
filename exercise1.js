@@ -136,7 +136,22 @@ const nums = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 // and 9: the zeroth, third, sixth, and ninth values.
 
 //your code...
-
+function valueArray(){
+    var i;
+    const nums = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+    for (i = 0; i < 5; i++){
+      if (i == 0){
+        console.log(nums[0]);
+      }else if(i==1){
+        console.log(nums[3]);
+      }else if(i==3){
+        console.log(nums[6]);
+      }else if(i==4){
+        console.log(nums[9]);
+      }
+    }
+    return 0;
+  }
 
 
 // Problem 9:
