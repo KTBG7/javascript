@@ -125,8 +125,6 @@ let complementary = function dnaPair(dna){
       compDna[i] = "A";
   } else if (dna.charAt(i)== "A"){
       compDna[i] = "T";
-  }else{
-    console.log("that is not a DNA strand");
   }
   } return compDna;
 }
