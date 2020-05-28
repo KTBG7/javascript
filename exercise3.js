@@ -28,7 +28,15 @@ function empty(){
 
 //your code...
 
-
+const str = "Javascript is boring";
+function replace(str){
+  if (str.includes("boring") == true){
+    str = str.replace("boring", "awesome!");
+    console.log(str);
+  }else{
+    console.log("This string does not contain that word!");
+  }
+}
 
 
 /************************************************************* */
