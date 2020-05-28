@@ -69,7 +69,17 @@ console.log(newArr());
 
 
 //your code...
-
+let normArr = [1, 3, 5, 7, 9, 1, 3, 5];
+let i;
+let greaterArr = [1, 3, 5, 7, 9, 1, 3, 5];
+let newArr = () => {for (let i=0;i < 8; i++){
+  if(greaterArr[i] > 3){
+  greaterArr[i] = normArr[i];
+  console.log(greaterArr[i]);
+  }
+}
+}
+console.log(newArr());
 
 
 
