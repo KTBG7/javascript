@@ -93,7 +93,11 @@ console.log(newArr());
 
 //your code...
 
-
+var array = [12,27,36,45,51]; 
+var sum = array.reduce((a, b)=>{
+return a + b;
+}, 0);
+console.log(sum);
 
 
 
