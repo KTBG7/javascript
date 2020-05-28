@@ -8,8 +8,14 @@
 
 
 //your code...
-
-
+function empty(){
+    let string = prompt("Enter a string!");
+    if (string === ""){
+        console.log(true);
+    }else{
+        console.log(false);
+    }
+    }
 
 
 
