@@ -46,7 +46,17 @@ function replace(str){
 
 
 //your code...
-
+let normArr = [1,2,3,4,5];
+let i = 0;
+let squareArr = [1,2,3,4,5];
+let newArr = () =>{
+while (i<5){
+  squareArr[i] = normArr[i] * normArr[i];
+  console.log(squareArr[i]);
+  i++; 
+}
+}
+console.log(newArr());
 
 
 
