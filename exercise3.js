@@ -112,7 +112,25 @@ console.log(sum);
 
 //your code...
 
-
+let dna = prompt("Enter your DNA strand");
+let compDna= [];
+let i;
+let complementary = function dnaPair(dna){
+  for (let i = 0; i < dna.length; i++){
+    if (dna.charAt(i)== "G"){
+      compDna[i] = "C";
+    }else if (dna.charAt(i)== "C"){
+      compDna[i] = "G";
+  }else if (dna.charAt(i)== "T"){
+      compDna[i] = "A";
+  } else if (dna.charAt(i)== "A"){
+      compDna[i] = "T";
+  }else{
+    console.log("that is not a DNA strand");
+  }
+  } return compDna;
+}
+console.log(complementary(dna));
 
 
 
