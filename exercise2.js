@@ -75,7 +75,32 @@ function operate(operations){
 // undefined
 // ""
 
+var n1 = 20;
+var n2 = 0;
+var n3 = "zero";
+const zero = 20;
+var n4 = zero;
+var n5 = null;
+var n6 = "0";
+var n7 = "";
+var n8 = {};
+var n9 = () => {console.log("hello, TEKcamp!")};
+var n10 = 125;
+var n11 = undefined;
+var n12 = "";
+var value = [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12];
 
+function truthyFalsy(value){
+  let i = 0;
+  while (i<12){
+  if (value[i]){
+    console.log(`This is Truthy because it is ${!!(value)}`);
+  }else{
+    console.log("Falsy");
+  }
+  i++
+}
+}
 
 
 /************************************************************* */
