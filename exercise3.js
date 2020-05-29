@@ -173,7 +173,9 @@ console.log(mapObj.has({company : "TEKsystems"}));
 
 let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 //reverse the array, without modifying the ones array.
-
+let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
+ones = ones.reverse();
+console.log(ones);
 
 /************************************************************* */
 //Problem 12:
