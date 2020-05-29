@@ -181,10 +181,13 @@ console.log(ones);
 //Problem 12:
 //create a function called performer(cb) that takes in a callback function and runs that callback function.  It should return the output of the callback function.
 
+let cb;
 function performer(cb) {
-    //code goes here
+  cb = ()=>{
+    console.log("callback has been ran");
+  };
+  return cb(cb);
 }
-
 
 /************************************************************* */
 //Bonus assignment:
