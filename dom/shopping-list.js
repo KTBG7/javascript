@@ -1,7 +1,9 @@
-var myList = document.getElementById("#my-list");
-var items = document.getElementById("#item");
-
-var myButton = document.getElementById("#button");
-myButton.onclick = myFunction(){
-    document.querySelector("#item").textContent = items;
+var myList = document.getElementById("my-list");
+var inputItem = document.getElementById("item");
+var items = function userItems () {
+    var input = inputItem.value;
+    alert(input);
 }
+var myButton = document.getElementById("button");
+myButton.addEventListener('click', items);
+
