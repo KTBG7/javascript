@@ -8,8 +8,14 @@
 
 
 //your code...
-
-
+function empty(){
+    let string = prompt("Enter a string!");
+    if (string === ""){
+        console.log(true);
+    }else{
+        console.log(false);
+    }
+    }
 
 
 
@@ -22,7 +28,15 @@
 
 //your code...
 
-
+const str = "Javascript is boring";
+function replace(str){
+  if (str.includes("boring") == true){
+    str = str.replace("boring", "awesome!");
+    console.log(str);
+  }else{
+    console.log("This string does not contain that word!");
+  }
+}
 
 
 /************************************************************* */
@@ -32,7 +46,17 @@
 
 
 //your code...
-
+let normArr = [1,2,3,4,5];
+let i = 0;
+let squareArr = [1,2,3,4,5];
+let newArr = () =>{
+while (i<5){
+  squareArr[i] = normArr[i] * normArr[i];
+  console.log(squareArr[i]);
+  i++; 
+}
+}
+console.log(newArr());
 
 
 
@@ -45,7 +69,17 @@
 
 
 //your code...
-
+let normArr = [1, 3, 5, 7, 9, 1, 3, 5];
+let i;
+let greaterArr = [1, 3, 5, 7, 9, 1, 3, 5];
+let newArr = () => {for (let i=0;i < 8; i++){
+  if(greaterArr[i] > 3){
+  greaterArr[i] = normArr[i];
+  console.log(greaterArr[i]);
+  }
+}
+}
+console.log(newArr());
 
 
 
@@ -59,7 +93,11 @@
 
 //your code...
 
-
+var array = [12,27,36,45,51]; 
+var sum = array.reduce((a, b)=>{
+return a + b;
+}, 0);
+console.log(sum);
 
 
 
@@ -74,7 +112,23 @@
 
 //your code...
 
-
+let dna = prompt("Enter your DNA strand");
+let compDna= [];
+let i;
+let complementary = function dnaPair(dna){
+  for (let i = 0; i < dna.length; i++){
+    if (dna.charAt(i)== "G"){
+      compDna[i] = "C";
+    }else if (dna.charAt(i)== "C"){
+      compDna[i] = "G";
+  }else if (dna.charAt(i)== "T"){
+      compDna[i] = "A";
+  } else if (dna.charAt(i)== "A"){
+      compDna[i] = "T";
+  }
+  } return compDna;
+}
+console.log(complementary(dna));
 
 
 
@@ -119,16 +173,21 @@ console.log(mapObj.has({company : "TEKsystems"}));
 
 let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 //reverse the array, without modifying the ones array.
-
+let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
+ones = ones.reverse();
+console.log(ones);
 
 /************************************************************* */
 //Problem 12:
 //create a function called performer(cb) that takes in a callback function and runs that callback function.  It should return the output of the callback function.
 
+let cb;
 function performer(cb) {
-    //code goes here
+  cb = ()=>{
+    console.log("callback has been ran");
+  };
+  return cb(cb);
 }
-
 
 /************************************************************* */
 //Bonus assignment:

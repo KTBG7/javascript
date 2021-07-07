@@ -10,7 +10,14 @@ for(let i=0; i<10; i++) {
 
 
 //your code...
-
+function forWhile(){
+    let i = 0;
+    while(i < 10){
+      console.log(" the value of i in the loop is : " + i);
+      i++;
+    }
+    return 0;
+    }
 
 
 
@@ -20,6 +27,35 @@ for(let i=0; i<10; i++) {
 //use javascript to compute the value of the above statement. Each individual operation needs to be a function expression. run all the functions after defining them, and print the answer to the console.
 
 //your code...
+var ans = 0;
+var i;
+const add = function(ans){
+  ans = 30 + 2
+  return ans;
+}
+var w = add(ans);
+
+const sub = function (ans, w){
+  ans = w * 20;
+  return ans;
+}
+var x = sub(ans, w);
+const div = function(ans, x){
+  ans = x / 10;
+  return ans;
+}
+var y = div(ans, x);
+const pow = function(ans, y){
+  ans = y * y;
+  return ans;
+}
+var z = pow(ans, y);
+var operations = [w,x,y,z];
+function operate(operations){
+  for (let i = 0; i < 4; i++){
+    console.log(operations[i]);
+  }return "It Works!";
+}
 
 
 /************************************************************* */
@@ -39,7 +75,32 @@ for(let i=0; i<10; i++) {
 // undefined
 // ""
 
+var n1 = 20;
+var n2 = 0;
+var n3 = "zero";
+const zero = 20;
+var n4 = zero;
+var n5 = null;
+var n6 = "0";
+var n7 = "";
+var n8 = {};
+var n9 = () => {console.log("hello, TEKcamp!")};
+var n10 = 125;
+var n11 = undefined;
+var n12 = "";
+var value = [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12];
 
+function truthyFalsy(value){
+  let i = 0;
+  while (i<12){
+  if (value[i]){
+    console.log(`This is Truthy because it is ${!!(value)}`);
+  }else{
+    console.log("Falsy");
+  }
+  i++
+}
+}
 
 
 /************************************************************* */
@@ -48,18 +109,24 @@ for(let i=0; i<10; i++) {
 
 const day = "friday";
 
-if(day === "monday") {
+switch(day) {
+  case "monday":
     console.log("we got a long week ahead of us...");
-} else if(day === "tuesday") {
+    break;
+  case "tuesday":
     console.log("tuesday's are still beterr than mondays, but LONG way to go still");
-} else if (day === "wednesday") {
-    console.log("We are smack dab in the middle of the week");
-} else if (day === "thursday") {
+    break;
+  case "wednesday":
+    console.log("We are smack dab in the middle of the week")
+    break;
+  case "thursday":
     console.log("Thursday night... the mood is right");
-} else if (day === "friday") {
-    console.log("TGIF.  Friday truly is the best day of the week!")
-} else {
-    console.log("It's a weekend!")
+    break;
+  case "friday":
+    console.log("TGIF.  Friday truly is the best day of the week!");
+    break;
+  default :
+    console.log("It's a weekend!");
 }
 
 
@@ -67,17 +134,16 @@ if(day === "monday") {
 /************************************************************* */
 // Problem 5: Refactor the following functions to use a ternary expression:
 const age = 10;
-if (age > 21) console.log("adult"); else {
-    console.log("minor");
-}
+var drinkingAge = age > 21 ? console.log("adult"):console.log("minor");
 
-if (age > 13 && age < 19) console.log('teen'); else {
-    console.log("not a teenager");
-};
+var teenager = (age > 13 && age < 19) ? console.log('teen'): console.log("not a teenager");
 
-if (age > 65) console.log("retired"); else {
-    console.log("still working...");
-}
+var retirement = age > 65 ? console.log("retired"):console.log("still working...");
+function ageGroups(age, drinkingAge, teenager, retirement){
+    console.log(drinkingAge);
+    console.log(teenager);
+    console.log(retirement);
+  }
 
 
 /************************************************************* */
@@ -96,19 +162,49 @@ if (age > 65) console.log("retired"); else {
 */
 
 //your code...
-
+var me = {
+    name: "Kevin Ibanez",
+    age: 18,
+    gender: "male",
+    hobbies: "building computers",
+    profession: "student",
+    education: "one semester of university",
+    learn: function(){
+      return this.name;
+      },
+    introduction: function(){
+      return "Hello, my name is " + this.name + "!" + " Nice to meet you!"; 
+    }
+  
+  }
 
 /************************************************************* */
 // Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
 
 //your code...
-
+var pc = {
+    cpu: "Ryzen 7 1700",
+    gpu: "RTX 2060 Super",
+    ramSize: "32GB",
+    rbg: "Yes",
+    caseType: "Full-Atx glass",
+    coolingType: "air cooled",
+    performance: function(){
+      return "With the " + this.cpu + " and " + this.gpu + " plus " + this.ramSize + ", it can run every single game well!"
+    }
+  }
 
 
 /************************************************************* */
 //Problem 7: create a function that outputs your 3 favorite data types, with a message explaining why you like that data type.
 
 //your code...
+function favoriteTypes(){
+    var response = prompt("type yes if you want to know my 3 favorite data type else type no");
+    if (response == yes){
+      return "My favorite data types are booleans, numbers and arrays. I love booleans because of their usefulness when creating function and/or if statements and many other statements. Numbers are awesome because they can be used to make the computer do that math for you when inputing them into a function instead of doing it yourself with a pencil! Lastly, I love arrays because they can hold multiple values and they can be used in conjunction with many other functional item in Javascript such as while statements!"
+    }
+  }
 
 
 
